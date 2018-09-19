@@ -29,10 +29,6 @@ class TodoList < Task
       @@total_tasks << new_task.task
     end
 
-    def tasks
-      return @@total_tasks
-
-    end
 
 
 end # class TodoList definition ends
@@ -50,13 +46,13 @@ inst_1.add_task(task1)
 inst_1.add_task(task2)
 inst_1.add_task(task3)
 
-p "#{inst_1.tasks.length}"
+p "#{inst_1.task.length}"
 
-puts "#{inst_1.tasks.class}"
+puts "#{inst_1.task.class}"
 
 p inst_1
 
-  inst_1.tasks.each do |tasks|
+  inst_1.task.each do |tasks|
     puts "#{tasks}"
 
   end
